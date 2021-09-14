@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -13,14 +14,19 @@
 </head>
 
 <body class="bg">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid ">
-            <a class="navbar-brand justify-content-begin" href="./index.html">
-                <img src="./img/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="" width="30" height="100%" class="d-inline-block align-text-top">
                 Jonas de Oliveira
             </a>
-            <div class="justify-content-end " id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -37,11 +43,11 @@
             </div>
         </div>
     </nav>
-    <div id="hero" class="jumbotron">
-        <div class="container">
+    <div id="hero">
+        <div class="container p-3">
             <h1 class="hero-title" class="load-hidden">
                 Olá, meu nome é<span class="text-primary"> Jonas de Oliveira</span>
-                <br/>
+                <br />
                 Eu sou Desenvolvedor Web
             </h1>
             <a href="#about"><button type="button" class="btn btn-outline-primary">Saiba mais</button></a>
@@ -88,16 +94,34 @@
             <h1 class="text-center">
                 Portfólio
             </h1>
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-3 text-center">
-                    <h2>Login</h2>
-                    <a href="https://jonasnoliveira.github.io/portfolio/"><img src="./img/login.jpg"
-                            class="img-fluid" /></a>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 text-center p-3">
+                    <div class="card">
+                        <img src="./img/login.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tela de Login</h5>
+                            <p class="card-text">
+                                Tecnologias: HTML5, CCS3, JS
+                            </p>
+                            <a href="https://jonasnoliveira.github.io/portfolio/" class="btn btn-primary">Visualize o
+                                projeto
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-3 text-center">
-                    <h2>Cadastro</h2>
-                    <a href="https://jonasnoliveira.github.io/portfolio/cadastro.html"><img src="./img/cadastro.jpg"
-                            class="img-fluid" /></a>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 text-center p-3">
+                    <div class="card">
+                        <img src="./img/cadastro.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tela de cadastro</h5>
+                            <p class="card-text">
+                                Tecnologias: HTML5, CCS3, JS
+                            </p>
+                            <a href="https://jonasnoliveira.github.io/portfolio/cadastro.html" class="btn btn-primary">Visualize o
+                                projeto
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,7 +134,7 @@
             </h1>
             <p>Para mais detalhes, entre em contato!</p>
             <h4>
-               Email: jonasnoliveirabr@gmail.com
+                Email: jonasnoliveirabr@gmail.com
             </h4>
             <h4>
                 Whatsapp: (35) 9 9739-9991
@@ -134,8 +158,8 @@
         </div>
     </section>
 
-    <footer class="text-center text-white"> 
-        
+    <footer class="text-center text-white">
+
         <!-- Copyright -->
         <div class="text-center p-3 bg-dark">
             © 2020 Copyright; Designed by

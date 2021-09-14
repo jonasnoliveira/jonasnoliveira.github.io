@@ -1,17 +1,13 @@
-/* .bg{
-    background-image: url("./img/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-} */
+@media only screen and (max-device-width: 700px) {
+    /* .menu { width:100%; } */
+}
 #hero {
     min-height: 100vh;
     height: 100vh;
     display: flex;
     align-items: center;
     border-bottom: 0px;
-    font-weight: 400;
+    font-weight: 300;
     padding: 0rem 5.6rem;
     margin-bottom: 0;
     top: 0;
@@ -22,7 +18,7 @@
     background-color: aliceblue;
 }
 .hero-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 650;
     margin-bottom: 3rem;
     text-align: left;
@@ -39,4 +35,7 @@
 }
 .btn{
     font-family: cursive,sans-serif ;
+}
+h4{
+    font-size: 20px;
 }
