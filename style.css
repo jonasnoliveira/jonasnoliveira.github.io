@@ -31,7 +31,7 @@ h1.tituloSite {
   border-radius: 100%;
 }
 
-.card {
+#projetos .card {
   width: 100%;
   height: 360px;
 }
